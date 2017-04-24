@@ -26,17 +26,6 @@ CryptoHasher.init(method:defaultKey:)
 CryptoHasher.make(_:key:)
 CryptoHasher.method
 Droplet.add(path:value:)
-Droplet.addConfigurable(cipher:name:)
-Droplet.addConfigurable(cipher:name:)
-Droplet.addConfigurable(client:name:)
-Droplet.addConfigurable(console:name:)
-Droplet.addConfigurable(console:name:)
-Droplet.addConfigurable(hash:name:)
-Droplet.addConfigurable(hash:name:)
-Droplet.addConfigurable(log:name:)
-Droplet.addConfigurable(log:name:)
-Droplet.addConfigurable(middleware:name:)
-Droplet.addConfigurable(server:name:)
 Droplet.addProvider(_:)
 Droplet.addProvider(_:)
 Droplet.arguments
@@ -59,8 +48,6 @@ Droplet.startServers(_:)
 Droplet.startedServers
 Droplet.stopServer(name:)
 Droplet.stopServers()
-Droplet.viewsDir
-Droplet.workDir
 EmptyInitializable
 EmptyInitializable.init()
 Environment
@@ -179,6 +166,10 @@ Renamed To
  `func makeNode(in context: Context?) throws -> Node`
 
 This function has been ren
+
+#### Add Configurable
+
+The configuration pattern for Vapor has been changed so that it preceeds droplet initialization. Consult the new Config documentation to transition.
 
 ## New API...
 
