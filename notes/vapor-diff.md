@@ -121,19 +121,6 @@ Prepare.init(console:preparations:database:)
 Prepare.preparations
 Prepare.run(arguments:)
 Prepare.signature
-Providable
-Providable.cache
-Providable.cipher
-Providable.client
-Providable.console
-Providable.database
-Providable.hash
-Providable.init(server:hash:cipher:console:log:view:client:database:cache:middleware:)
-Providable.log
-Providable.middleware
-Providable.server
-Providable.view
-ProvidableError
 Provider.afterInit(_:)
 Provider.beforeRun(_:)
 Provider.boot(_:)
@@ -175,6 +162,10 @@ Validation has been revisited and put into an independent package add `//fixme` 
 ##### Missing - Polymorphic
 
 Polymorphic was a generally invisible layer that is no longer necessary. 
+
+##### Missing - Providable
+
+Providable was a model that existed to encapsulate providers. Conform to `Provider` protocol instead.
 
 ## New API...
 
