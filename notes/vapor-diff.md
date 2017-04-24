@@ -43,8 +43,6 @@ Droplet.startServers(_:)
 Droplet.startedServers
 Droplet.stopServer(name:)
 Droplet.stopServers()
-EmptyInitializable
-EmptyInitializable.init()
 Environment
 Environment.init(id:)
 FileMiddleware.init(workDir:)
@@ -175,6 +173,10 @@ var metadata: Node? { get }
 #### Abort
 
 Abort is no longer an enumeration and thus can not be used w/ `switch` statements. The `Abort` struct can be used independently to provide complex and useful errors during the debugging process.
+
+#### Empty Initializable
+
+This is now nested in the `Core` package, add `import Core` where required
 
 ## New API...
 
