@@ -5,3 +5,6 @@ func unimplemented(function: StaticString = #function) -> Never {
     print("please consult deprecation warnings")
     exit(1)
 }
+
+@_exported import LeafProvider
+@_exported import FluentProvider

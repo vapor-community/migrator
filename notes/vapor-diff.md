@@ -1,11 +1,6 @@
 ## Missing/changed API...
 
 ```Swift
-AbortMiddleware
-AbortMiddleware.errorResponse(_:_:)
-AbortMiddleware.errorResponse(_:_:_:)
-AbortMiddleware.init(environment:log:)
-AbortMiddleware.respond(to:chainingTo:)
 CommandLine.environment
 ConsoleLogger.init(console:)
 Content.append(_:)
@@ -174,9 +169,24 @@ var metadata: Node? { get }
 
 Abort is no longer an enumeration and thus can not be used w/ `switch` statements. The `Abort` struct can be used independently to provide complex and useful errors during the debugging process.
 
+#### ErrorMiddleware
+
+All error middleware has been bundled into a comprehensive `ErrorMiddleware`. This replaces:
+
+- AbortMiddleware
+- ValidationErrorMiddleware
+
 #### Empty Initializable
 
 This is now nested in the `Core` package, add `import Core` where required
+
+#### Model
+
+The `Model` protocol has moved to the `FluentProvider` add `import FluentProvider` to your files.
+
+#### Environment
+
+`Environment` is declared in the `Configs` module. Add `import Configs` to your project.
 
 ## New API...
 

@@ -29,9 +29,4 @@ class migratorTests: XCTestCase {
 
         print(markdown)
     }
-
-
-    static var allTests = [
-        ("testExample", testExample),
-    ]
 }
