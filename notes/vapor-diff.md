@@ -155,17 +155,33 @@ ViewRenderer.make(_:)
 ViewRenderer.make(_:_:for:)
 ```
 
-##### Missing - Validation
+## Removed
+
+#### Validation
 
 Validation has been revisited and put into an independent package add `//fixme` to your `Package.swift`.
 
-##### Missing - Polymorphic
+#### Polymorphic
 
 Polymorphic was a generally invisible layer that is no longer necessary. 
 
-##### Missing - Providable
+#### Providable
 
 Providable was a model that existed to encapsulate providers. Conform to `Provider` protocol instead.
+
+## Changed
+
+#### Make Node
+
+Original
+
+`makeNode(context: Context) throws -> Node`
+
+Renamed To
+
+ `func makeNode(in context: Context?) throws -> Node`
+
+This function has been ren
 
 ## New API...
 
