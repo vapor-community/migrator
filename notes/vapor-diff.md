@@ -9,8 +9,6 @@ AbortMiddleware.errorResponse(_:_:)
 AbortMiddleware.errorResponse(_:_:_:)
 AbortMiddleware.init(environment:log:)
 AbortMiddleware.respond(to:chainingTo:)
-CORSConfiguration.init(config:)
-CORSMiddleware.init(configuration:)
 CommandLine.environment
 ConsoleLogger.init(console:)
 Content.append(_:)
@@ -195,8 +193,6 @@ BCryptHasher.cost
 BCryptHasher.init(config:)
 BCryptHasher.init(cost:)
 BCryptHasher.make(_:)
-CORSConfiguration.init(config:)
-CORSMiddleware.init(config:)
 CacheSessions.init(config:)
 ClientFactory
 ClientFactory.init()
