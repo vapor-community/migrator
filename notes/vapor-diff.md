@@ -107,14 +107,6 @@ Provider.name
 Provider.provided
 Provider.provided
 Request.multipart
-RouteBuilder.collection(_:)
-RouteBuilder.group(_:closure:)
-RouteBuilder.group(collection:closure:)
-RouteBuilder.grouped(_:)
-RouteBuilder.grouped(collection:)
-RouteBuilder.resource(_:_:)
-RouteBuilder.resource(_:_:)
-RouteBuilder.resource(_:_:closure:)
 Serve.init(console:prepare:serve:)
 Serve.prepare
 Serve.serve
@@ -343,12 +335,6 @@ Responder.post(_:query:_:_:through:)
 Responder.put(_:query:_:_:through:)
 Responder.request(_:_:query:_:_:through:)
 Responder.respond(to:through:)
-RouteBuilder.collection(_:)
-RouteBuilder.collection(_:)
-RouteBuilder.resource(_:_:)
-RouteBuilder.resource(_:_:)
-RouteBuilder.resource(_:_:)
-RouteBuilder.resource(_:_:closure:)
 RouteCollection
 RouteCollection.build(_:)
 RouteList
