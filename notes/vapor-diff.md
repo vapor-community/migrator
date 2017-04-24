@@ -169,6 +169,10 @@ This function has been ren
 
 The configuration pattern for Vapor has been changed so that it preceeds droplet initialization. Consult the new Config documentation to transition.
 
+#### Config
+
+All items that originally took `Settings.Config` should now take a slightly expanded object under `Configs.config`.
+
 ## New API...
 
 ```Swift
