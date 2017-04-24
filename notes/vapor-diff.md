@@ -1,11 +1,7 @@
 ## Missing/changed API...
 
 ```Swift
-CommandLine.environment
 ConsoleLogger.init(console:)
-Content.append(_:)
-Content.append(_:)
-Content.append(_:)
 CryptoCipher.init(config:)
 CryptoCipher.init(method:defaultKey:defaultIV:)
 CryptoCipher.method
@@ -104,8 +100,6 @@ Serve.init(console:prepare:serve:)
 Serve.prepare
 Serve.serve
 VersionCommand.init(console:)
-View.init(bytes:)
-View.makeBytes()
 ViewRenderer.init(viewsDir:)
 ViewRenderer.make(_:)
 ViewRenderer.make(_:_:for:)
@@ -188,6 +182,10 @@ The `Model` protocol has moved to the `FluentProvider` add `import FluentProvide
 
 `Environment` is declared in the `Configs` module. Add `import Configs` to your project.
 
+#### Content
+
+`Content` is now simplified and no longer requires the use of a `Polymorphic` protocol. It instead takes `StructuredDataWrapper` types. This is a largely internally used object and shouldn't affect most projects.
+
 ## New API...
 
 ```Swift
@@ -253,11 +251,6 @@ Config.viewsDir
 Config.workDir
 ConsoleLogger.init(_:)
 ConsoleLogger.init(config:)
-Content.append(_:)
-Content.append(_:)
-Content.append(_:)
-Content.get(_:)
-Content.get(_:)
 CryptoCipher.init(config:)
 CryptoCipher.init(method:defaultKey:defaultIV:)
 CryptoCipher.method
@@ -397,8 +390,6 @@ Terminal.init(config:)
 TypeSafeRoutingError.reason
 UnimplementedMailer.init(config:)
 VersionCommand.init(_:)
-View.init(bytes:)
-View.makeBytes()
 ViewContext
 ViewContext.shared
 ViewRenderer.make(_:_:from:)
