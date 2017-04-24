@@ -110,8 +110,6 @@ Multipart.string
 Multipart.uint
 MultipartSerializationError
 Node.init(formURLEncoded:)
-PolymorphicInitializable
-PolymorphicInitializableError
 Prepare
 Prepare.console
 Prepare.database
@@ -143,8 +141,6 @@ Serve.serve
 TypeSafeErrorMiddleware
 TypeSafeErrorMiddleware.init()
 TypeSafeErrorMiddleware.respond(to:chainingTo:)
-URI.makeNode(context:)
-Version.makeNode(context:)
 VersionCommand.init(console:)
 View.init(bytes:)
 View.makeBytes()
@@ -411,9 +407,7 @@ StringInitializable
 StringInitializable.init(_:)
 Terminal.init(config:)
 TypeSafeRoutingError.reason
-URI.makeNode(in:)
 UnimplementedMailer.init(config:)
-Version.makeNode(in:)
 VersionCommand.init(_:)
 View.init(bytes:)
 View.makeBytes()
