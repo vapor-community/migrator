@@ -12,8 +12,6 @@ AbortMiddleware.respond(to:chainingTo:)
 CORSConfiguration.init(config:)
 CORSMiddleware.init(configuration:)
 CommandLine.environment
-ConfigInitializable
-ConfigInitializable.init(config:)
 ConsoleLogger.init(console:)
 Content.append(_:)
 Content.append(_:)
@@ -138,9 +136,6 @@ RouteBuilder.resource(_:_:closure:)
 Serve.init(console:prepare:serve:)
 Serve.prepare
 Serve.serve
-TypeSafeErrorMiddleware
-TypeSafeErrorMiddleware.init()
-TypeSafeErrorMiddleware.respond(to:chainingTo:)
 VersionCommand.init(console:)
 View.init(bytes:)
 View.makeBytes()
@@ -162,6 +157,14 @@ Polymorphic was a generally invisible layer that is no longer necessary.
 #### Providable
 
 Providable was a model that existed to encapsulate providers. Conform to `Provider` protocol instead.
+
+#### Config Initializable
+
+This protocol has been removed as provider pattern has been restructured.
+
+#### TypeSafe Error Middleware
+
+The error handling in Vapor has been largely moved to our new `Debugging` package. The middleware here is no longer necessary.
 
 ## Changed
 
