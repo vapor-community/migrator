@@ -128,7 +128,6 @@ Provider.boot(_:)
 Provider.name
 Provider.provided
 Provider.provided
-Request.makeNode(context:)
 Request.multipart
 RouteBuilder.collection(_:)
 RouteBuilder.group(_:closure:)
@@ -141,7 +140,6 @@ RouteBuilder.resource(_:_:closure:)
 Serve.init(console:prepare:serve:)
 Serve.prepare
 Serve.serve
-Session.makeNode(context:)
 TypeSafeErrorMiddleware
 TypeSafeErrorMiddleware.init()
 TypeSafeErrorMiddleware.respond(to:chainingTo:)
@@ -352,7 +350,6 @@ ProviderInstall.providers
 ProviderInstall.publicDir
 ProviderInstall.run(arguments:)
 ProviderInstall.viewsDir
-Request.makeNode(in:)
 Responder.delete(_:query:_:_:through:)
 Responder.get(_:query:_:_:through:)
 Responder.patch(_:query:_:_:through:)
@@ -403,7 +400,6 @@ ServerProtocol
 ServerProtocol.defaultTLSContext
 ServerProtocol.init(hostname:port:_:)
 ServerProtocol.start(_:errors:)
-Session.makeNode(in:)
 SessionsMiddleware.init(config:)
 StaticViewRenderer
 StaticViewRenderer.cache
