@@ -1,9 +1,6 @@
 ## Missing/changed API...
 
 ```Swift
-Abort
-Abort.code
-Abort.message
 AbortMiddleware
 AbortMiddleware.errorResponse(_:_:)
 AbortMiddleware.errorResponse(_:_:_:)
@@ -173,24 +170,23 @@ The configuration pattern for Vapor has been changed so that it preceeds droplet
 
 All items that originally took `Settings.Config` should now take a slightly expanded object under `Configs.config`.
 
+#### Abort Error
+
+The `AbortError` protocol has been streamlined, and now only has three required properties:
+
+```Swift
+var status: Status { get }
+var reason: String { get }
+var metadata: Node? { get }
+```
+
+#### Abort
+
+Abort is no longer an enumeration and thus can not be used w/ `switch` statements. The `Abort` struct can be used independently to provide complex and useful errors during the debugging process.
+
 ## New API...
 
 ```Swift
-Abort
-Abort.badRequest
-Abort.documentationLinks
-Abort.gitHubIssues
-Abort.identifier
-Abort.init(_:metadata:reason:identifier:possibleCauses:suggestedFixes:documentationLinks:stackOverflowQuestions:gitHubIssues:)
-Abort.notFound
-Abort.possibleCauses
-Abort.readableName
-Abort.reason
-Abort.serverError
-Abort.stackOverflowQuestions
-Abort.suggestedFixes
-Abort.unauthorized
-AbortError.metadata
 BCryptHasher
 BCryptHasher.check(_:matchesHash:)
 BCryptHasher.cost
