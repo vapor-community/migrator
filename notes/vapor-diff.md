@@ -12,8 +12,6 @@ CryptoHasher.init(method:defaultKey:)
 CryptoHasher.make(_:key:)
 CryptoHasher.method
 Droplet.add(path:value:)
-Droplet.addProvider(_:)
-Droplet.addProvider(_:)
 Droplet.arguments
 Droplet.availableMiddleware
 Droplet.client
@@ -186,6 +184,10 @@ The `Model` protocol has moved to the `FluentProvider` add `import FluentProvide
 
 `Content` is now simplified and no longer requires the use of a `Polymorphic` protocol. It instead takes `StructuredDataWrapper` types. This is a largely internally used object and shouldn't affect most projects.
 
+#### Add Provider
+
+The function `addProvider(` has moved to the `Config` object and now preceeds droplet `initialization`.
+
 ## New API...
 
 ```Swift
@@ -206,22 +208,6 @@ ClientFactoryProtocol.makeClient(hostname:port:_:)
 ClientProtocol
 ClientProtocol.defaultTLSContext
 ClientProtocol.init(hostname:port:_:)
-Config.addConfigurable(cache:name:)
-Config.addConfigurable(cipher:name:)
-Config.addConfigurable(client:name:)
-Config.addConfigurable(client:name:)
-Config.addConfigurable(command:name:)
-Config.addConfigurable(console:name:)
-Config.addConfigurable(hash:name:)
-Config.addConfigurable(log:name:)
-Config.addConfigurable(mail:name:)
-Config.addConfigurable(middleware:name:)
-Config.addConfigurable(server:name:)
-Config.addConfigurable(server:name:)
-Config.addConfigurable(sessions:name:)
-Config.addConfigurable(view:name:)
-Config.addProvider(_:)
-Config.addProvider(_:)
 Config.customAddConfigurable(closure:unique:name:)
 Config.customOverride(instance:unique:)
 Config.customResolve(unique:file:keyPath:as:default:)

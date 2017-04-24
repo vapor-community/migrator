@@ -47,3 +47,10 @@ extension Droplet {
         return config.viewsDir
     }
 }
+
+extension Droplet {
+    @available(*, deprecated: 1.0, message: "Configuration has been moved to preceed droplet initialization. Consult the new configuration docs.")
+    public func addProvider(_: Any) {
+        unimplemented()
+    }
+}
