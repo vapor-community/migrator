@@ -18,7 +18,6 @@ Droplet.config
 Droplet.database
 Droplet.init(arguments:workDir:environment:config:localization:log:)
 Droplet.init(arguments:workDir:environment:config:localization:log:server:hash:cipher:console:view:client:database:cache:availableMiddleware:serverMiddleware:clientMiddleware:staticServerMiddleware:staticClientMiddleware:preparations:providers:initializedProviders:)
-Droplet.preparations
 Droplet.providers
 Droplet.resourcesDir
 Droplet.run(servers:)
@@ -35,10 +34,6 @@ MediaType
 MediaType.fileExtension
 MediaType.init(_:)
 MediaType.mediaType
-Model
-Model.init(from:)
-Model.makeJSON()
-Model.makeResponse()
 Multipart
 Multipart.Error
 Multipart.File
@@ -64,15 +59,6 @@ Multipart.string
 Multipart.uint
 MultipartSerializationError
 Node.init(formURLEncoded:)
-Prepare
-Prepare.console
-Prepare.database
-Prepare.help
-Prepare.id
-Prepare.init(console:preparations:database:)
-Prepare.preparations
-Prepare.run(arguments:)
-Prepare.signature
 Provider.afterInit(_:)
 Provider.beforeRun(_:)
 Provider.boot(_:)
@@ -191,6 +177,10 @@ The function `addProvider(` has moved to the `Config` object and now preceeds dr
 #### Drop.database
 
 Drop.database is now declared in `FluentProvider` ensure you have `import FluentProvider` and that the package has been added to your `Package.swift`
+
+#### Prepare
+
+Prepare command and associated functionality such as `Drop.preparations` are now declared in `FluentProvider`. Ensure that `import FluentProvider` has been added to your file.
 
 ## New API...
 
