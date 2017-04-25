@@ -10,12 +10,7 @@ CryptoHasher.init(config:)
 CryptoHasher.init(method:defaultKey:)
 CryptoHasher.make(_:key:)
 CryptoHasher.method
-Droplet.add(path:value:)
-Droplet.arguments
 Droplet.client
-Droplet.config
-Droplet.database
-Droplet.init(arguments:workDir:environment:config:localization:log:)
 Droplet.resourcesDir
 Droplet.run(servers:)
 HashEncoding
@@ -23,11 +18,6 @@ HashProtocol.defaultKey
 HashProtocol.make(_:encoding:)
 HashProtocol.make(_:key:)
 HashProtocol.make(_:key:encoding:)
-Node.init(formURLEncoded:)
-Request.multipart
-Serve.init(console:prepare:serve:)
-Serve.prepare
-Serve.serve
 ```
 
 ## Removed

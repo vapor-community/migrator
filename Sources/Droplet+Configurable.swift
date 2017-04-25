@@ -106,7 +106,30 @@ extension Droplet {
 
 extension Droplet {
     @available(*, deprecated: 1.0, renamed: "config.providers")
-    public var providers: [Provider] {
+    public var providers: [Vapor.Provider] {
         return config.providers
+    }
+
+    @available(*, deprecated: 1.0, renamed: "config.arguments")
+    public var arguments: [String] {
+        return config.arguments
+    }
+}
+
+extension Droplet {
+    @available(
+        *,
+        deprecated: 1.0,
+        message: "Configuration has been moved to preceed droplet initialization. Consult the new configuration docs."
+    )
+    public convenience init(
+        arguments: Any = 0,
+        workDir: Any = 0,
+        environment: Any = 0,
+        config: Any = 0,
+        localization: Any = 0,
+        log: Any = 0
+    ) {
+        unimplemented()
     }
 }
