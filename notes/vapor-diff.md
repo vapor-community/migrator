@@ -22,7 +22,6 @@ Droplet.init(arguments:workDir:environment:config:localization:log:server:hash:c
 Droplet.preparations
 Droplet.providers
 Droplet.resourcesDir
-Droplet.router
 Droplet.run(servers:)
 Droplet.server
 Droplet.startServer(_:name:)
@@ -271,7 +270,6 @@ Droplet.init(config:)
 Droplet.init(config:localization:)
 Droplet.mail
 Droplet.register(host:method:path:responder:)
-Droplet.router
 Droplet.run()
 Droplet.server
 DumpConfig
