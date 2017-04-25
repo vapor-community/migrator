@@ -28,7 +28,6 @@ Request.multipart
 Serve.init(console:prepare:serve:)
 Serve.prepare
 Serve.serve
-VersionCommand.init(console:)
 ```
 
 ## Removed
