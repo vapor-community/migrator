@@ -10,9 +10,6 @@ CryptoHasher.init(config:)
 CryptoHasher.init(method:defaultKey:)
 CryptoHasher.make(_:key:)
 CryptoHasher.method
-Droplet.client
-Droplet.resourcesDir
-Droplet.run(servers:)
 HashEncoding
 HashProtocol.defaultKey
 HashProtocol.make(_:encoding:)
@@ -141,6 +138,10 @@ Some of the provider values have changed to use the config object as opposed to 
 #### LeafRenderer
 
 LeafRenderer has been moved to the `LeafProvider` library. Add `import LeafProvider` to relevant files.
+
+#### Drop.Client
+
+Drop.client has changed to a factory based type, if you're not using custom behavior here, there should be no changes necessary.
 
 ## New API...
 

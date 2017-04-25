@@ -41,10 +41,15 @@ extension Droplet {
     public var workDir: String {
         return config.workDir
     }
-    
+
     @available(*, deprecated: 1.0, renamed: "config.viewsDir")
     public var viewsDir: String {
         return config.viewsDir
+    }
+
+    @available(*, deprecated: 1.0, renamed: "config.resourcesDir")
+    public var resourcesDir: String {
+        return config.resourcesDir
     }
 }
 
