@@ -33,30 +33,6 @@ MediaType
 MediaType.fileExtension
 MediaType.init(_:)
 MediaType.mediaType
-Multipart
-Multipart.Error
-Multipart.File
-Multipart.File.data
-Multipart.File.init(name:type:data:)
-Multipart.File.name
-Multipart.File.type
-Multipart.array
-Multipart.bool
-Multipart.double
-Multipart.file
-Multipart.files
-Multipart.float
-Multipart.input
-Multipart.inputArray
-Multipart.inputs
-Multipart.int
-Multipart.isNull
-Multipart.json
-Multipart.object
-Multipart.serialized(boundary:keyName:)
-Multipart.string
-Multipart.uint
-MultipartSerializationError
 Node.init(formURLEncoded:)
 Provider.afterInit(_:)
 Provider.beforeRun(_:)
@@ -180,6 +156,10 @@ Drop.database is now declared in `FluentProvider` ensure you have `import Fluent
 #### Prepare
 
 Prepare command and associated functionality such as `Drop.preparations` are now declared in `FluentProvider`. Ensure that `import FluentProvider` has been added to your file.
+
+#### Multipart
+
+Multipart has been deprecated since v1.2 in preference of `request.formData`.
 
 ## New API...
 
