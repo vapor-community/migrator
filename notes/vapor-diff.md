@@ -1,19 +1,3 @@
-## Missing/changed API...
-
-```Swift
-CryptoHasher.Error
-CryptoHasher.defaultKey
-CryptoHasher.init(config:)
-CryptoHasher.init(method:defaultKey:)
-CryptoHasher.make(_:key:)
-CryptoHasher.method
-HashEncoding
-HashProtocol.defaultKey
-HashProtocol.make(_:encoding:)
-HashProtocol.make(_:key:)
-HashProtocol.make(_:key:encoding:)
-```
-
 ## Removed
 
 #### Validation
