@@ -13,11 +13,9 @@ CryptoHasher.make(_:key:)
 CryptoHasher.method
 Droplet.add(path:value:)
 Droplet.arguments
-Droplet.availableMiddleware
 Droplet.client
 Droplet.config
 Droplet.database
-Droplet.enabledMiddleware
 Droplet.environment
 Droplet.init(arguments:workDir:environment:config:localization:log:)
 Droplet.init(arguments:workDir:environment:config:localization:log:server:hash:cipher:console:view:client:database:cache:availableMiddleware:serverMiddleware:clientMiddleware:staticServerMiddleware:staticClientMiddleware:preparations:providers:initializedProviders:)
@@ -126,6 +124,19 @@ This protocol has been removed as provider pattern has been restructured.
 The error handling in Vapor has been largely moved to our new `Debugging` package. The middleware here is no longer necessary.
 
 ## Changed
+
+#### Middleware
+
+Middleware setup has moved to the configuration object, please see the documentation for how to update.
+
+In Code middleware behavior can be replicated with the following
+
+```Swift
+var middleware: [Middleware] = []
+middleware.append(foo)
+middleware.append(bar)
+config.override(middleware: middleware)
+```
 
 #### Make Node
 
