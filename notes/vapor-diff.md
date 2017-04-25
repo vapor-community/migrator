@@ -27,18 +27,7 @@ HashProtocol.make(_:key:)
 HashProtocol.make(_:key:encoding:)
 LeafRenderer
 LeafRenderer.stem
-MediaType
-MediaType.fileExtension
-MediaType.init(_:)
-MediaType.mediaType
 Node.init(formURLEncoded:)
-Provider.afterInit(_:)
-Provider.beforeRun(_:)
-Provider.boot(_:)
-Provider.boot(_:)
-Provider.name
-Provider.provided
-Provider.provided
 Request.multipart
 Serve.init(console:prepare:serve:)
 Serve.prepare
@@ -158,6 +147,14 @@ Prepare command and associated functionality such as `Drop.preparations` are now
 #### Multipart
 
 Multipart has been deprecated since v1.2 in preference of `request.formData`.
+
+#### MediaType
+
+Media Type has been removed from the Vapor framework. It provided no value over a simple dictionary structure and was showing signs of negative performance.
+
+#### Provider
+
+Some of the provider values have changed to use the config object as opposed to the Droplet. This allows a more predictable resolution system. Look at the new Provider documentation for more information.
 
 ## New API...
 
