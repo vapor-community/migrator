@@ -20,8 +20,6 @@ Droplet.init(arguments:workDir:environment:config:localization:log:)
 Droplet.providers
 Droplet.resourcesDir
 Droplet.run(servers:)
-FormData.array
-FormData.object
 HashEncoding
 HashProtocol.defaultKey
 HashProtocol.make(_:encoding:)
