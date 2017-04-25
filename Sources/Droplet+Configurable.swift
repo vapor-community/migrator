@@ -104,3 +104,9 @@ extension Droplet {
     }
 }
 
+extension Droplet {
+    @available(*, deprecated: 1.0, renamed: "config.providers")
+    public var providers: [Provider] {
+        return config.providers
+    }
+}

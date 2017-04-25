@@ -16,7 +16,6 @@ Droplet.client
 Droplet.config
 Droplet.database
 Droplet.init(arguments:workDir:environment:config:localization:log:)
-Droplet.providers
 Droplet.resourcesDir
 Droplet.run(servers:)
 HashEncoding
