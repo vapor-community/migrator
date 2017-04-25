@@ -23,8 +23,6 @@ HashProtocol.defaultKey
 HashProtocol.make(_:encoding:)
 HashProtocol.make(_:key:)
 HashProtocol.make(_:key:encoding:)
-LeafRenderer
-LeafRenderer.stem
 Node.init(formURLEncoded:)
 Request.multipart
 Serve.init(console:prepare:serve:)
@@ -153,6 +151,10 @@ Media Type has been removed from the Vapor framework. It provided no value over 
 #### Provider
 
 Some of the provider values have changed to use the config object as opposed to the Droplet. This allows a more predictable resolution system. Look at the new Provider documentation for more information.
+
+#### LeafRenderer
+
+LeafRenderer has been moved to the `LeafProvider` library. Add `import LeafProvider` to relevant files.
 
 ## New API...
 
