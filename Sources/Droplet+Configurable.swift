@@ -66,3 +66,36 @@ extension Droplet {
         }
     }
 }
+
+extension Droplet {
+    @available(*, deprecated: 1.0)
+    public func stopServer(name: Any) {
+        /// this is no longer necessary, droplets should be
+        /// created on unique threads and killed manually
+        /// for situations that require multiple droplets
+        unimplemented()
+    }
+
+    @available(*, deprecated: 1.0)
+    public func stopServers() {
+        stopServer(name: "")
+    }
+
+    @available(*, deprecated: 1.0, message: "No longer applicable, use multiple droplets")
+    public func startServer(_: Any, name: Any) {
+        unimplemented()
+    }
+
+    @available(*, deprecated: 1.0, message: "No longer applicable, use multiple droplets")
+    public func startServers(_: Any) {
+        unimplemented()
+    }
+
+    @available(*, deprecated: 1.0, message: "No longer applicable, use multiple droplets")
+    public func startedServers() -> Any {
+        unimplemented()
+    }
+}
+
+
+

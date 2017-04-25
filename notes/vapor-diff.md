@@ -23,12 +23,6 @@ Droplet.preparations
 Droplet.providers
 Droplet.resourcesDir
 Droplet.run(servers:)
-Droplet.server
-Droplet.startServer(_:name:)
-Droplet.startServers(_:)
-Droplet.startedServers
-Droplet.stopServer(name:)
-Droplet.stopServers()
 FormData.array
 FormData.object
 HashEncoding
@@ -268,7 +262,6 @@ Droplet.init(config:localization:)
 Droplet.mail
 Droplet.register(host:method:path:responder:)
 Droplet.run()
-Droplet.server
 DumpConfig
 DumpConfig.config
 DumpConfig.console
