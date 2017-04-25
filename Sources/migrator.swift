@@ -17,3 +17,12 @@ extension ConsoleLogger {
         self.init(console)
     }
 }
+
+////////
+
+extension ViewRenderer {
+    @available(*, deprecated: 1.0)
+    public init(viewsDir: Any) {
+        unimplemented()
+    }
+}

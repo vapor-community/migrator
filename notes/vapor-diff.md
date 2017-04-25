@@ -29,9 +29,6 @@ Serve.init(console:prepare:serve:)
 Serve.prepare
 Serve.serve
 VersionCommand.init(console:)
-ViewRenderer.init(viewsDir:)
-ViewRenderer.make(_:)
-ViewRenderer.make(_:_:for:)
 ```
 
 ## Removed
