@@ -1,7 +1,6 @@
 ## Missing/changed API...
 
 ```Swift
-ConsoleLogger.init(console:)
 CryptoCipher.init(config:)
 CryptoCipher.init(method:defaultKey:defaultIV:)
 CryptoCipher.method

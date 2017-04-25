@@ -8,3 +8,12 @@ func unimplemented(function: StaticString = #function) -> Never {
 
 @_exported import LeafProvider
 @_exported import FluentProvider
+
+
+import Console
+extension ConsoleLogger {
+    @available(*, deprecated: 1.0, renamed: "init(_:)")
+    public convenience init(console: ConsoleProtocol) {
+        self.init(console)
+    }
+}
