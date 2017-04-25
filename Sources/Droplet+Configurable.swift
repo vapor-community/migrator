@@ -97,5 +97,10 @@ extension Droplet {
     }
 }
 
-
+extension Droplet {
+    @available(*, deprecated: 1.0, renamed: "config.environment")
+    public var environment: Environment {
+        return config.environment
+    }
+}
 

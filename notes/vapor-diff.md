@@ -16,7 +16,6 @@ Droplet.arguments
 Droplet.client
 Droplet.config
 Droplet.database
-Droplet.environment
 Droplet.init(arguments:workDir:environment:config:localization:log:)
 Droplet.init(arguments:workDir:environment:config:localization:log:server:hash:cipher:console:view:client:database:cache:availableMiddleware:serverMiddleware:clientMiddleware:staticServerMiddleware:staticClientMiddleware:preparations:providers:initializedProviders:)
 Droplet.preparations
@@ -188,6 +187,10 @@ The `Model` protocol has moved to the `FluentProvider` add `import FluentProvide
 #### Add Provider
 
 The function `addProvider(` has moved to the `Config` object and now preceeds droplet `initialization`.
+
+#### Drop.database
+
+Drop.database is now declared in `FluentProvider` ensure you have `import FluentProvider` and that the package has been added to your `Package.swift`
 
 ## New API...
 
