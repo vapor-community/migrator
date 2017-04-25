@@ -29,9 +29,6 @@ Droplet.startServers(_:)
 Droplet.startedServers
 Droplet.stopServer(name:)
 Droplet.stopServers()
-Environment
-Environment.init(id:)
-FileMiddleware.init(workDir:)
 FormData.array
 FormData.object
 HashEncoding
@@ -294,7 +291,6 @@ ErrorMiddleware.init(_:_:)
 ErrorMiddleware.init(config:)
 ErrorMiddleware.make(with:for:)
 ErrorMiddleware.respond(to:chainingTo:)
-FileMiddleware.init(config:)
 FormData.bytes
 FormData.makeNode(in:)
 HMAC.init(_:)
