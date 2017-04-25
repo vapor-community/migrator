@@ -17,7 +17,6 @@ Droplet.client
 Droplet.config
 Droplet.database
 Droplet.init(arguments:workDir:environment:config:localization:log:)
-Droplet.init(arguments:workDir:environment:config:localization:log:server:hash:cipher:console:view:client:database:cache:availableMiddleware:serverMiddleware:clientMiddleware:staticServerMiddleware:staticClientMiddleware:preparations:providers:initializedProviders:)
 Droplet.providers
 Droplet.resourcesDir
 Droplet.run(servers:)
