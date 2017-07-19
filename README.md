@@ -4,7 +4,7 @@ This package can help you migrate your Vapor 1.x project to Vapor 2.0. It includ
 
 ### 1. Add Migrator to your `Package.swift`
 
-Add `.Package(url: "https://github.com/vapor/vapor.git", majorVersion: 1)` to your `Package.swift` dependencies. Your file should look something like this ...
+Add `.Package(url: "https://github.com/vapor/migrator.git", majorVersion: 1)` to your `Package.swift` dependencies. Your file should look something like this ...
 
 ```swift
 import PackageDescription
